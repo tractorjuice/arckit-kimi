@@ -1,0 +1,39 @@
+{
+  "name": "arckit",
+  "version": "6.3.0",
+  "description": "The Enterprise Architecture Governance Harness: strategy, architecture, delivery and assurance artefacts.",
+  "skills": "./skills/",
+  "sessionStart": {
+    "skill": "architecture-workflow"
+  },
+  "mcpServers": {
+    "aws-knowledge": {
+      "url": "https://knowledge-mcp.global.api.aws"
+    },
+    "microsoft-learn": {
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "google-developer-knowledge": {
+      "url": "https://developerknowledge.googleapis.com/mcp",
+      "headers": {
+        "X-Goog-Api-Key": "${GOOGLE_API_KEY}"
+      }
+    },
+    "datacommons-mcp": {
+      "url": "https://api.datacommons.org/mcp",
+      "headers": {
+        "X-API-Key": "${DATA_COMMONS_API_KEY}"
+      }
+    },
+    "govreposcrape": {
+      "url": "https://govreposcrape-api-1060386346356.us-central1.run.app/mcp"
+    },
+    "uk-tenders": {
+      "url": "https://tenders.run.cns.me/mcp"
+    }
+  },
+  "interface": {
+    "displayName": "ArcKit",
+    "shortDescription": "Strategy, architecture, delivery and assurance artefacts"
+  }
+}

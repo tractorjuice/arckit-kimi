@@ -1,0 +1,148 @@
+# Defence Project Path
+
+## When This Path Applies
+
+- Ministry of Defence (MOD) projects
+- Defence contractors working on MOD programmes
+- Projects subject to JSP 440 (Defence Manual of Security)
+- IAMM (Information Assurance Maturity Model) applies
+- Digital Outcomes and Specialists (DOS) procurement likely
+- Security clearance requirements for team
+
+## Compliance Frameworks
+
+- JSP 440 (Defence Manual of Security)
+- IAMM (Information Assurance Maturity Model)
+- MOD Secure by Design
+- Technology Code of Practice (TCoP)
+- JSP 936 (MOD AI Assurance) — if AI/ML components
+- Green Book / Orange Book (HM Treasury)
+
+## Phased Command Sequence
+
+### Phase 1: Foundation (Mandatory)
+
+| # | Command | Rationale | Artifacts |
+|---|---------|-----------|-----------|
+| 1 | `/skill:arckit-principles` | Governance foundation — must align with MOD architecture standards | ARC-000-PRIN-v1.0.md |
+| 2 | `/skill:arckit-stakeholders` | Map DDaT roles, SROs, security officers, DG/2* sponsors | ARC-{PID}-STKE-v1.0.md |
+| 3 | `/skill:arckit-risk` | MOD risk methodology with security classification | ARC-{PID}-RISK-v1.0.md |
+
+### Phase 2: Business Justification
+
+| # | Command | Rationale | Artifacts |
+|---|---------|-----------|-----------|
+| 4 | `/skill:arckit-sobc` | HM Treasury Green Book SOBC with defence-specific considerations | ARC-{PID}-SOBC-v1.0.md |
+| 5 | `/skill:arckit-requirements` | Requirements with security and interoperability constraints | ARC-{PID}-REQ-v1.0.md |
+
+### Phase 3: Design and Analysis
+
+| # | Command | Rationale | Artifacts |
+|---|---------|-----------|-----------|
+| 6 | `/skill:arckit-datascout` | Discover data sources within MOD and cross-government | ARC-{PID}-DSCT-v1.0.md |
+| 7 | `/skill:arckit-data-model` | Data architecture with classification levels | ARC-{PID}-DMOD-v1.0.md |
+| 8 | `/skill:arckit-dpia` | Data Protection Impact Assessment | ARC-{PID}-DPIA-v1.0.md |
+| 9 | `/skill:arckit-research` | Technology research with defence supplier focus | ARC-{PID}-RES-v1.0.md |
+| 10 | `/skill:arckit-wardley` | Strategic positioning for defence capabilities | ARC-{PID}-WARD-001-v1.0.md |
+| 11 | `/skill:arckit-roadmap` | Multi-year roadmap aligned to defence planning rounds | ARC-{PID}-ROAD-v1.0.md |
+| 12 | `/skill:arckit-diagram` | Architecture diagrams (C4, sequence, DFD) | ARC-{PID}-DIAG-001-v1.0.md |
+
+### Phase 4: Procurement (DOS)
+
+| # | Command | Rationale | Artifacts |
+|---|---------|-----------|-----------|
+| 13 | `/skill:arckit-dos` | Digital Outcomes and Specialists opportunity | ARC-{PID}-DOS-v1.0.md |
+| 14 | `/skill:arckit-sow` | Statement of work for procurement | ARC-{PID}-SOW-v1.0.md |
+| 15 | `/skill:arckit-evaluate` | Vendor evaluation with security vetting requirements | ARC-{PID}-EVAL-v1.0.md |
+
+### Phase 5: Design Reviews
+
+| # | Command | Rationale | Artifacts |
+|---|---------|-----------|-----------|
+| 16 | `/skill:arckit-hld-review` | HLD review against MOD architecture standards | ARC-{PID}-HLDR-v1.0.md |
+| 17 | `/skill:arckit-dld-review` | DLD review with security architecture focus | ARC-{PID}-DLDR-v1.0.md |
+| 18 | `/skill:arckit-adr` | Architecture Decision Records | ARC-{PID}-ADR-001-v1.0.md |
+
+### Phase 6: Implementation
+
+| # | Command | Rationale | Artifacts |
+|---|---------|-----------|-----------|
+| 19 | `/skill:arckit-backlog` | Product backlog from requirements and design | ARC-{PID}-BKLG-v1.0.md |
+
+### Phase 7: Operations and Quality
+
+| # | Command | Rationale | Artifacts |
+|---|---------|-----------|-----------|
+| 20 | `/skill:arckit-devops` | CI/CD with secure pipeline requirements | ARC-{PID}-DVOP-v1.0.md |
+| 21 | `/skill:arckit-operationalize` | Operational readiness with MOD service management | ARC-{PID}-OPS-v1.0.md |
+| 22 | `/skill:arckit-traceability` | End-to-end traceability matrix | ARC-{PID}-TRACE-v1.0.md |
+
+### Phase 8: Compliance (Defence Specific)
+
+| # | Command | Rationale | Artifacts |
+|---|---------|-----------|-----------|
+| 23 | `/skill:arckit-tcop` | Technology Code of Practice assessment | ARC-{PID}-TCOP-v1.0.md |
+| 24 | `/skill:arckit-mod-secure` | MOD Secure by Design (JSP 440, IAMM) | ARC-{PID}-MSEC-v1.0.md |
+| 25 | `/skill:arckit-principles-compliance` | Principles adherence | ARC-{PID}-PCOMP-v1.0.md |
+| 26 | `/skill:arckit-conformance` | ADR conformance checking | ARC-{PID}-CONF-v1.0.md |
+| 27 | `/skill:arckit-analyze` | Deep governance analysis | ARC-{PID}-ANAL-v1.0.md |
+| 28 | `/skill:arckit-service-assessment` | Service assessment readiness | ARC-{PID}-SA-v1.0.md |
+
+### Phase 9: Reporting
+
+| # | Command | Rationale | Artifacts |
+|---|---------|-----------|-----------|
+| 29 | `/skill:arckit-story` | Project narrative for governance boards | ARC-{PID}-STORY-v1.0.md |
+| 30 | `/skill:arckit-pages` | GitHub Pages documentation site | docs/index.html |
+
+## AI/ML Additions
+
+> See ai-ml-path.md for full AI/ML additions; the entries below are defence-specific supplements only.
+
+If the defence project includes AI/ML components, add these commands:
+
+| # | Command | Where to Insert | Rationale | Artifacts |
+|---|---------|-----------------|-----------|-----------|
+| — | `/skill:arckit-mlops` | Phase 7, after devops | ML model lifecycle, training pipelines | ARC-{PID}-MLOP-v1.0.md |
+| — | `/skill:arckit-jsp-936` | Phase 8, after mod-secure | MOD AI Assurance (JSP 936) | ARC-{PID}-JSP936-v1.0.md |
+
+### Critical Gates for AI Projects
+
+- JSP 936 risk classification determines approval pathway:
+  - **Critical**: 2PUS/Ministerial approval
+  - **Severe/Major**: Defence-Level JROC/IAC approval
+  - **Moderate/Minor**: TLB-Level approval
+
+## Optional Commands
+
+| Command | When to Add | Phase |
+|---------|-------------|-------|
+| `/skill:arckit-strategy` | Executive strategy synthesis needed | After Phase 3 |
+| `/skill:arckit-platform-design` | Defence platform or shared service | Phase 3 |
+| `/skill:arckit-data-mesh-contract` | Federated data products across TLBs | Phase 3 |
+| `/skill:arckit-gcloud-search` | G-Cloud procurement (alternative to DOS) | Phase 4 |
+| `/skill:arckit-finops` | Cloud cost management | Phase 7 |
+| `/skill:arckit-servicenow` | ServiceNow CMDB integration | Phase 7 |
+| `/skill:arckit-presentation` | Governance board slide deck | Phase 9 |
+
+## Minimum Viable Path
+
+For initial security assessment preparation:
+
+1. `/skill:arckit-principles`
+2. `/skill:arckit-stakeholders`
+3. `/skill:arckit-requirements`
+4. `/skill:arckit-risk`
+5. `/skill:arckit-mod-secure`
+
+## Duration
+
+- **Non-AI projects**: 12-24 months
+- **AI projects**: 18-36 months
+- **Minimum viable**: 3-6 weeks
+
+## Critical Gates
+
+- MOD Secure by Design (JSP 440, IAMM) required before Beta
+- Security clearances required for all team members
+- JSP 936 AI assurance required before Beta (AI projects only)
