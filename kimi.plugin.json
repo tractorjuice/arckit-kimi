@@ -1,6 +1,6 @@
 {
   "name": "arckit",
-  "version": "6.3.0",
+  "version": "6.4.0",
   "description": "The Enterprise Architecture Governance Harness: strategy, architecture, delivery and assurance artefacts.",
   "skills": "./skills/",
   "sessionStart": {

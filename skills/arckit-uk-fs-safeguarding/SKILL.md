@@ -275,5 +275,5 @@ After completing this command, consider running:
 
 - `/skill:arckit-uk-fs-ctp-dependency` -- The safeguarding bank or insurer is itself a critical dependency — assess it in the CTP dependency register.
 - `/skill:arckit-risk` -- Safeguarding failure is a high-impact Orange Book risk — cross-reference it in the project risk register.
-- `/skill:arckit-operationalize` -- Reconciliation runbook is a day-2 operational artefact — assemble it via /skill:arckit-operationalize-
+- `/skill:arckit-operationalize` -- Reconciliation runbook is a day-2 operational artefact — assemble it via /skill:arckit-operationalize.
 - `/skill:arckit-adr` -- Safeguarding method choice (segregation vs insurance vs guarantee) is an architectural decision worth recording.
