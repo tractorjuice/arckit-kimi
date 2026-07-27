@@ -1,7 +1,18 @@
 {
   "name": "arckit",
-  "version": "6.4.0",
+  "version": "6.5.0",
   "description": "The Enterprise Architecture Governance Harness: strategy, architecture, delivery and assurance artefacts.",
+  "author": "ArcKit",
+  "homepage": "https://github.com/tractorjuice/arckit-kimi",
+  "repository": "https://github.com/tractorjuice/arckit-kimi",
+  "license": "MIT",
+  "keywords": [
+    "enterprise-architecture",
+    "governance",
+    "procurement",
+    "public-sector",
+    "kimi"
+  ],
   "skills": "./skills/",
   "sessionStart": {
     "skill": "architecture-workflow"
@@ -32,8 +43,102 @@
       "url": "https://tenders.run.cns.me/mcp"
     }
   },
+  "hooks": [
+    {
+      "event": "SessionStart",
+      "command": "node ./hooks/kimi-hook-adapter.mjs arckit-session.mjs",
+      "timeout": 5
+    },
+    {
+      "event": "SessionStart",
+      "command": "node ./hooks/kimi-hook-adapter.mjs notify-stale-artifacts.mjs",
+      "timeout": 8
+    },
+    {
+      "event": "UserPromptSubmit",
+      "command": "node ./hooks/kimi-hook-adapter.mjs arckit-context.mjs",
+      "timeout": 10
+    },
+    {
+      "event": "UserPromptSubmit",
+      "command": "node ./hooks/kimi-hook-adapter.mjs secret-detection.mjs",
+      "timeout": 5
+    },
+    {
+      "event": "PreToolUse",
+      "matcher": "Edit|Write",
+      "command": "node ./hooks/kimi-hook-adapter.mjs file-protection.mjs",
+      "timeout": 5
+    },
+    {
+      "event": "PreToolUse",
+      "matcher": "Edit|Write",
+      "command": "node ./hooks/kimi-hook-adapter.mjs secret-file-scanner.mjs",
+      "timeout": 5
+    },
+    {
+      "event": "PreToolUse",
+      "matcher": "Write",
+      "command": "node ./hooks/kimi-hook-adapter.mjs validate-arc-filename.mjs /projects/",
+      "timeout": 5
+    },
+    {
+      "event": "PreToolUse",
+      "matcher": "Write",
+      "command": "node ./hooks/kimi-hook-adapter.mjs score-validator.mjs /vendors/scores.json",
+      "timeout": 5
+    },
+    {
+      "event": "PreToolUse",
+      "matcher": "Write",
+      "command": "node ./hooks/kimi-hook-adapter.mjs validate-wardley-math.mjs /wardley-maps/",
+      "timeout": 5
+    },
+    {
+      "event": "PostToolUse",
+      "matcher": "Write|Edit",
+      "command": "node ./hooks/kimi-hook-adapter.mjs provenance-stamp.mjs /projects/",
+      "timeout": 5
+    },
+    {
+      "event": "PostToolUse",
+      "matcher": "Write|Edit",
+      "command": "node ./hooks/kimi-hook-adapter.mjs tidy-wardley-labels.mjs /wardley-maps/",
+      "timeout": 10
+    },
+    {
+      "event": "PostToolUse",
+      "matcher": "Write",
+      "command": "node ./hooks/kimi-hook-adapter.mjs update-manifest.mjs /projects/",
+      "timeout": 5
+    },
+    {
+      "event": "PostToolUse",
+      "matcher": ".*",
+      "command": "node ./hooks/kimi-hook-adapter.mjs telemetry.mjs",
+      "timeout": 3
+    },
+    {
+      "event": "Stop",
+      "command": "node ./hooks/kimi-hook-adapter.mjs session-learner.mjs",
+      "timeout": 10
+    },
+    {
+      "event": "StopFailure",
+      "command": "node ./hooks/kimi-hook-adapter.mjs session-learner.mjs",
+      "timeout": 10
+    },
+    {
+      "event": "PostCompact",
+      "command": "node ./hooks/kimi-hook-adapter.mjs postcompact-rehydrate.mjs",
+      "timeout": 5
+    }
+  ],
   "interface": {
     "displayName": "ArcKit",
-    "shortDescription": "Strategy, architecture, delivery and assurance artefacts"
+    "shortDescription": "Strategy, architecture, delivery and assurance artefacts",
+    "longDescription": "Use ArcKit to create, review, and connect architecture, procurement, governance, compliance, research, and delivery artefacts in Kimi Code CLI.",
+    "developerName": "ArcKit",
+    "websiteURL": "https://github.com/tractorjuice/arc-kit"
   }
 }
