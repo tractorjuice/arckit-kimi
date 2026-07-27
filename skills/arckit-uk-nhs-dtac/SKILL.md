@@ -33,7 +33,7 @@ DTAC was introduced by NHSX (now part of NHS England's Transformation Directorat
 |---|---|---|---|
 | 1 | Clinical Safety | DCB0129 (manufacturer) + DCB0160 (deployer) compliance | `/skill:arckit-uk-nhs-dcb0129`, `/skill:arckit-uk-nhs-dcb0160` |
 | 2 | Data Protection | UK GDPR, DPA 2018, DSPT, DPIA | `/skill:arckit-dpia` |
-| 3 | Technical Assurance | Security, cloud, software lifecycle, business continuity | `/skill:arckit-secure`, `/skill:arckit-hld`, `/skill:arckit-dld` |
+| 3 | Technical Assurance | Security, cloud, software lifecycle, business continuity | `/skill:arckit-secure`, `/skill:arckit-hld-review`, `/skill:arckit-dld-review` |
 | 4 | Interoperability | FHIR UK Core, SNOMED CT, NHS Number, NHS APIs (PDS, e-RS, GP Connect) | `/skill:arckit-data-model`, `/skill:arckit-adr` |
 | 5 | Usability and Accessibility | NHS Service Standard, WCAG 2.2 AA | `/skill:arckit-service-assessment` |
 | AI annex | AI / ML components | Model governance, ATRS, training-data provenance, fairness, drift monitoring | `/skill:arckit-atrs` |
