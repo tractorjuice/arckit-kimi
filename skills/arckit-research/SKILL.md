@@ -375,7 +375,7 @@ Return ONLY a concise summary including:
 ## Toolchain
 
 - **Templates** — `.arckit/templates/research-findings-template.md` (override at `.arckit/templates-custom/research-findings-template.md`) · `.arckit/templates/vendor-profile-template.md`
-- **Helpers** — `.arckit/scripts/bash/create-project.sh` (project resolution) · `.arckit/scripts/bash/generate-document-id.sh` (document ID allocation)
+- **Helpers** — `.arckit/scripts/bash/create-project.sh` (project resolution) · `.arckit/scripts/generate-document-id.mjs` (document ID allocation)
 - **External tools** — `WebSearch` · `WebFetch` (vendor research, no MCP)
 - **Related commands** — `/skill:arckit-requirements` (input) · `/skill:arckit-tenders` (upstream procurement award evidence — run before research) · `/skill:arckit-competitors` (upstream competitor landscape — run before research) · `/skill:arckit-evaluate` (downstream) · `/skill:arckit-score` (downstream) · `/skill:arckit-gcloud-search` (G-Cloud cross-check)
 
