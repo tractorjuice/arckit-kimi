@@ -1,6 +1,6 @@
 {
   "name": "arckit",
-  "version": "6.16.3",
+  "version": "6.16.4",
   "description": "The Enterprise Architecture Governance Harness: strategy, architecture, delivery and assurance artefacts.",
   "author": "ArcKit",
   "homepage": "https://github.com/tractorjuice/arckit-kimi",
@@ -92,6 +92,12 @@
       "event": "PreToolUse",
       "matcher": "Write",
       "command": "node ./hooks/kimi-hook-adapter.mjs validate-wardley-math.mjs /wardley-maps/",
+      "timeout": 5
+    },
+    {
+      "event": "PreToolUse",
+      "matcher": "Write",
+      "command": "node ./hooks/kimi-hook-adapter.mjs validate-backlog-totals.mjs -BKLG-",
       "timeout": 5
     },
     {
