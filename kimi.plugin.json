@@ -1,6 +1,6 @@
 {
   "name": "arckit",
-  "version": "6.16.6",
+  "version": "6.17.0",
   "description": "The Enterprise Architecture Governance Harness: strategy, architecture, delivery and assurance artefacts.",
   "author": "ArcKit",
   "homepage": "https://github.com/tractorjuice/arckit-kimi",
@@ -41,6 +41,9 @@
     },
     "uk-tenders": {
       "url": "https://tenders.run.cns.me/mcp"
+    },
+    "trello": {
+      "url": "https://mcp.trello.com/v1"
     }
   },
   "hooks": [
