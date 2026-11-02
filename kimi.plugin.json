@@ -1,6 +1,6 @@
 {
   "name": "arckit",
-  "version": "6.18.3",
+  "version": "6.19.0",
   "description": "The Enterprise Architecture Governance Harness: strategy, architecture, delivery and assurance artefacts.",
   "author": "ArcKit",
   "homepage": "https://github.com/tractorjuice/arckit-kimi",
@@ -69,55 +69,55 @@
     },
     {
       "event": "PreToolUse",
-      "matcher": "Edit|Write",
+      "matcher": "^(Edit|Write|StrReplaceFile|WriteFile)$",
       "command": "node ./hooks/kimi-hook-adapter.mjs file-protection.mjs",
       "timeout": 5
     },
     {
       "event": "PreToolUse",
-      "matcher": "Edit|Write",
+      "matcher": "^(Edit|Write|StrReplaceFile|WriteFile)$",
       "command": "node ./hooks/kimi-hook-adapter.mjs secret-file-scanner.mjs",
       "timeout": 5
     },
     {
       "event": "PreToolUse",
-      "matcher": "Write",
+      "matcher": "^(Write|WriteFile)$",
       "command": "node ./hooks/kimi-hook-adapter.mjs validate-arc-filename.mjs /projects/",
       "timeout": 5
     },
     {
       "event": "PreToolUse",
-      "matcher": "Write",
+      "matcher": "^(Write|WriteFile)$",
       "command": "node ./hooks/kimi-hook-adapter.mjs score-validator.mjs /vendors/scores.json",
       "timeout": 5
     },
     {
       "event": "PreToolUse",
-      "matcher": "Write",
+      "matcher": "^(Write|WriteFile)$",
       "command": "node ./hooks/kimi-hook-adapter.mjs validate-wardley-math.mjs /wardley-maps/",
       "timeout": 5
     },
     {
       "event": "PreToolUse",
-      "matcher": "Write",
+      "matcher": "^(Write|WriteFile)$",
       "command": "node ./hooks/kimi-hook-adapter.mjs validate-backlog-totals.mjs -BKLG-",
       "timeout": 5
     },
     {
       "event": "PostToolUse",
-      "matcher": "Write|Edit",
+      "matcher": "^(Edit|Write|StrReplaceFile|WriteFile)$",
       "command": "node ./hooks/kimi-hook-adapter.mjs provenance-stamp.mjs /projects/",
       "timeout": 5
     },
     {
       "event": "PostToolUse",
-      "matcher": "Write|Edit",
+      "matcher": "^(Edit|Write|StrReplaceFile|WriteFile)$",
       "command": "node ./hooks/kimi-hook-adapter.mjs tidy-wardley-labels.mjs /wardley-maps/",
       "timeout": 10
     },
     {
       "event": "PostToolUse",
-      "matcher": "Write",
+      "matcher": "^(Write|WriteFile)$",
       "command": "node ./hooks/kimi-hook-adapter.mjs update-manifest.mjs /projects/",
       "timeout": 5
     },

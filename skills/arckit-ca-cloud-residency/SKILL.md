@@ -65,4 +65,4 @@ Treasury Board of Canada Secretariat *Direction on the Secure Use of Commercial 
 After completing this command, consider running:
 
 - `/skill:arckit-adr` -- Sovereign cloud option choices and CLOUD-Act risk acceptance warrant Architecture Decision Records.
-- `/skill:arckit-ca-itsg-33` -- Cloud control-profile selection (PBMM-Cloud, Secret-High) is grounded in the ITSG-33 categorisation.
+- `/skill:arckit-ca-pspc` -- The residency envelope, sub-processor analysis and CSP shortlist feed the federal procurement strategy where cloud is in scope.
