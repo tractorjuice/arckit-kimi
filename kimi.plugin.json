@@ -1,11 +1,11 @@
 {
   "name": "arckit",
-  "version": "6.19.0",
+  "version": "6.20.0",
   "description": "The Enterprise Architecture Governance Harness: strategy, architecture, delivery and assurance artefacts.",
   "author": "ArcKit",
   "homepage": "https://github.com/tractorjuice/arckit-kimi",
   "repository": "https://github.com/tractorjuice/arckit-kimi",
-  "license": "MIT",
+  "license": "MIT AND CC-BY-SA-4.0",
   "keywords": [
     "enterprise-architecture",
     "governance",
