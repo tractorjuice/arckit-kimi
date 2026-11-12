@@ -29,7 +29,7 @@
 | # | Command | Rationale | Artifacts |
 |---|---------|-----------|-----------|
 | 6 | `/skill:arckit-data-model` | Define data structures from DR-xxx requirements | ARC-{PID}-DMOD-v1.0.md |
-| 7 | `/skill:arckit-research` | Technology options, build vs buy, vendor landscape | ARC-{PID}-RES-v1.0.md |
+| 7 | `/skill:arckit-research` | Technology options, checked facts, costs, vendor landscape | ARC-{PID}-RSCH-001-v1.0.md |
 | 8 | `/skill:arckit-wardley` | Strategic positioning and evolution analysis | ARC-{PID}-WARD-001-v1.0.md |
 | 9 | `/skill:arckit-roadmap` | Multi-year timeline from strategy analysis | ARC-{PID}-ROAD-v1.0.md |
 | 10 | `/skill:arckit-diagram` | Architecture diagrams (C4, DFD, sequence) | ARC-{PID}-DIAG-001-v1.0.md |
